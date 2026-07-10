@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* header-section-start */
+
 .header-section{
     width: 100%;
     background-color: #ffffff;
@@ -59,3 +61,57 @@
         .btn-register:hover{
             background-color: #1d4ed8;
         }
+
+/* header-section-completed */
+
+/* banner-section-start */
+
+.banner-section{
+    width: 100%;
+    min-width: 60vh;
+    background-image: linear-gradient( to bottom, rgba(0,0,0,.6), rgba(0,0,0,.7)), url('./images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+.banner-container{
+    width: 100%;
+    max-width: 800px;
+}
+    .banner-container .banner-title{
+        font-size: 56px;
+        font-weight: 800;
+        color: #ffffff;
+        margin-bottom: 24px;
+    }
+        .banner-container .banner-title .italic-text{
+            font-style: italic;
+            font-weight: 800;
+        }
+    .banner-container .banner-description{
+        font-size: 18px;
+        color: #cbd5e1;
+        line-height: 1.5;
+        font-weight: 400;
+        margin-bottom: 40px;   
+    }
+    .banner-container .btn-banner-register{
+        background-color: #2563eb;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 14px 36px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 80px;
+    } 
+        .banner-container .btn-banner-register:hover{
+            background-color: #1d4ed8;
+        } 
+/* banner-section-completed */
