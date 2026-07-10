@@ -311,3 +311,141 @@
         border: 1px solid #0f172a;
         color: #0f172a;
     }
+
+
+/* AI-generating-section */
+
+/* ==========================================================================
+   ৫. এআই ক্রিয়েটিভ নিয়ন সেকশন স্টাইলস 
+   ========================================================================== */
+.ai-creative-section {
+    background: radial-gradient(circle at 50% 50%, #0f172a 0%, #020617 100%); /* প্রিমিয়াম ডার্ক গ্রেডিয়েন্ট */
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ai-badge {
+    display: inline-block;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.ai-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+}
+
+.ai-subtitle {
+    font-size: 16px;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+    line-height: 1.6;
+}
+
+/* কার্ড গ্রিড লেআউট */
+.ai-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+/* মডার্ন গ্লাসমরফিজম কার্ড বেস */
+.ai-stat-card {
+    background: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 40px 32px;
+    text-align: left;
+    backdrop-filter: blur(12px);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+}
+
+.ai-icon {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.ai-stat-number {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 8px;
+    background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ai-stat-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.ai-stat-desc {
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+/* 🔥 নিয়ন গ্লো ইফেক্টস এবং হোভার অ্যানিমেশন */
+.card-glow-blue:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
+    transform: translateY(-8px);
+}
+.card-glow-blue .ai-stat-number {
+    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+    -webkit-background-clip: text;
+}
+
+.card-glow-purple:hover {
+    border-color: #a78bfa;
+    box-shadow: 0 0 40px rgba(139, 92, 246, 0.15);
+    transform: translateY(-8px);
+}
+.card-glow-purple .ai-stat-number {
+    background: linear-gradient(90deg, #c084fc, #a78bfa);
+    -webkit-background-clip: text;
+}
+
+.card-glow-emerald:hover {
+    border-color: #34d399;
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.15);
+    transform: translateY(-8px);
+}
+.card-glow-emerald .ai-stat-number {
+    background: linear-gradient(90deg, #6ee7b7, #34d399);
+    -webkit-background-clip: text;
+}
+
+/* রেসপন্সিভনেস */
+@media (max-width: 968px) {
+    .ai-card-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .ai-title {
+        font-size: 32px;
+    }
+}
+
