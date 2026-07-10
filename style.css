@@ -170,3 +170,144 @@
                 font-weight: 400;
             }
 /* meet-the-speakers-end */
+
+/* price-section-start */
+
+.pricing-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+.pricing-main-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+.pricing-subtitle{
+    text-align: center;
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 50px;
+}
+.pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* standard-and-team-card-styling */
+
+.pricing-grid .pricing-card{
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 32px 24px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+}
+    .pricing-card .plan-name{
+        font-size: 12px;
+        font-weight: 700;
+        color: #64748b;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .pricing-card .plan-price{
+        font-size: 42px;
+        font-weight: 800;
+        color: #0f172a;
+    }
+
+    .pricing-card .plan-duration{
+        font-size: 13px;
+        color: #94a3b8;
+        display: block;
+        margin-top: 8px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #f1f5f9;
+        padding-bottom: 24px;
+    }
+
+    .pricing-card .plan-features{
+        list-style: none;
+        padding: 0;
+        margin: 0 0 32px 0;
+        flex-grow: 1;
+    }
+        .plan-features li{
+            font-size: 14px;
+            color: #334155;
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 18px;
+        }
+            .plan-features li::before{
+                content: ".";
+                color: #2563eb;
+                font-weight: bold;
+                position: absolute;
+                left: 0;
+            } 
+
+/* pro-features-card-styling */            
+
+.pricing-grid .card-featured{
+    background-color: #0b1320;
+    border-color: #0b1320;
+    color: #ffffff;
+}
+    .card-featured .plan-name{
+        color: #3b82f6;
+    }
+    .card-featured .plan-price{
+        color: #ffffff ;
+    }
+    .card-featured .plan-duration{
+        border-bottom-color: #1e293b;
+    }
+    .card-featured .plan-features li{
+        color: #cbd5e1;
+    }
+        .plan-features li::before{
+            color: #3b82f6;
+        }
+
+
+/* button-common-features */
+
+.pricing-card .plan-btn{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+    /* first-card-button */
+    .pricing-card .btn-outline{
+        background-color: transparent;
+        border: 1px solid #2563eb;
+        color: #2563eb;
+    }
+
+    /* second-card-button */
+    .pricing-card .btn-primary{
+        background-color: #2563eb;
+        border:1px solid #2563eb;
+        color: #ffffff;
+    }
+
+    /* third-card-button */
+    .pricing-card .btn-dark{
+        background-color: transparent;
+        border: 1px solid #0f172a;
+        color: #0f172a;
+    }
