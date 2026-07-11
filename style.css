@@ -467,15 +467,7 @@ footer{
     align-items: center;
     margin-bottom: 25px;
 }
-.footer-logo h2{
-    margin: 0;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-.footer-logo h2 span{
-    color: #007bff;
-}
+
 .footer-social{
     display: flex;
     gap: 20px;
